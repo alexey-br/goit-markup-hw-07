@@ -1,12 +1,14 @@
 .link {
     text-decoration: none;
     transition: color $trans-dur $trans-time-func;
+
+    &:hover,
+    &:focus {
+        color: $color-accent;
+    }
 }
 
-.link:hover,
-.link:focus {
-    color: $color-accent;
-}
+
 
 .container {
     width: 1200px;

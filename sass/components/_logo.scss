@@ -8,4 +8,9 @@
 
 .logo__studio {
     color: #000000;
+
+    &--white-color {
+        color: $color-third-text;
+    }
 }
+

@@ -53,17 +53,16 @@
     border-radius: 50%;
 
     transition: color $trans-dur $trans-time-func;
-}
 
-.backdrop__modal-close:hover,
-.backdrop__modal-close:focus {
-    color: $color-accent;
+    &:hover,
+    &:focus {
+        color: $color-accent;
+    }
 }
 
 .backdrop__modal-icon {
     fill: currentColor;
 }
-
 
 .backdrop__modal-title {
     font-weight: 700;

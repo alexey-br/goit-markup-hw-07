@@ -1,27 +1,22 @@
 .footer {
     background-color: $color-background;
     padding: 60px 0;
+
+    &__container {
+        display: flex;
+    }
 }
 
-.footer__container {
-    display: flex;
-}
-
-.logo__studio--white-color {
-    color: $color-third-text;
-}
-
-.address-list {
+.footer-address {
     margin-top: 20px;
 }
 
 .address-list__item {
-    list-style-type: none;
     height: 21px;
-}
 
-.address-list__item:not(:last-child) {
-    margin-bottom: 9px;
+    &:not(:last-child) {
+        margin-bottom: 9px;
+    }
 }
 
 .address-list__link {
@@ -30,10 +25,10 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-}
 
-.address-list__link--white-color {
-    color: $color-third-text;
+    &--white-color {
+        color: $color-third-text;
+    }
 }
 
 .social-links {
@@ -72,63 +67,15 @@
 
     transition: background-color $trans-dur $trans-time-func,
         color $trans-dur $trans-time-func;
-}
 
-.social-list__link--dark-bg {
-    background-color: rgba(255, 255, 255, 0.1);
-    color: #FFF;
-}
+        &--dark-bg {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #FFF;
+        }
 
-.social-list__link:hover,
-.social-list__link:focus {
-    background-color: $color-accent;
-    color: #FFF;
-}
-
-.subscribe-form {
-    display: flex;
-    align-items: flex-end;
-    margin-left: auto;
-    margin-bottom: auto;
-    margin-top: 15px;
-
-}
-
-.subscribe-form__field {
-    display: flex;
-    flex-direction: column;
-}
-
-.subscribe-form__input {
-    padding: 14px 15px;
-    width: 358px;
-    background-color: $color-background;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    font-size: 16px;
-    line-height: 1.25;
-    color: $color-third-text;
-    outline: none;
-
-    transition: border-color $trans-dur $trans-time-func;
-}
-
-.subscribe-form__input::placeholder {
-    color: rgba(255, 255, 255, 0.6);
-}
-
-.subscribe-form__input:focus {
-    border-color: $color-accent;
-}
-
-.subscribe-form__submit-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 12px;
-}
-
-.subscribe-form__btn-icon {
-    margin-left: 10px;
+        &:hover,
+        &:focus {
+            background-color: $color-accent;
+            color: #FFF;
+        }
 }

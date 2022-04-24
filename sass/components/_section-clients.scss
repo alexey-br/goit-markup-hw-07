@@ -10,10 +10,10 @@
 .clients-list__item {
     display: flex;
     justify-content: center;
-}
 
-.clients-list__item:not(:last-child) {
-    margin-right: 30px;
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
 .clients-list__link {
@@ -25,12 +25,12 @@
     color: #AFB1B8;
     transition: border-color $trans-dur $trans-time-func,
         color $trans-dur $trans-time-func;
-}
 
-.clients-list__link:hover,
-.clients-list__link:focus {
-    border-color: $color-accent;
-    color: $color-accent;
+    &:hover,
+    &:focus {
+        border-color: $color-accent;
+        color: $color-accent;
+    }
 }
 
 .clients-list__logo {
