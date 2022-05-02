@@ -1100,7 +1100,7 @@ body {
   margin-bottom: 30px;
 }
 
-.projects-list__item:hover .portf-card-text {
+.projects-list__item:hover .projects-list__description {
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
 }
